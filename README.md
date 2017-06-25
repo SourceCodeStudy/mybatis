@@ -15,6 +15,8 @@ SqlSessionFactoryBuiler     method
 SqlSessionFactory           application    
 SqlSession                  request/method(线程级)    
 Mapper                      method    
+2.2、通过JAVA配置和XML使用mybatis 
+     
 
 3、分析mapper.xml   
 
