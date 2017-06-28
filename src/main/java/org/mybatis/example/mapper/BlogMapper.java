@@ -1,6 +1,8 @@
-package org.mybatis.example;
+package org.mybatis.example.mapper;
 
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
+import org.mybatis.example.entity.Blog;
 
 /**
  * 操作数据对应的Mapper
@@ -22,4 +24,8 @@ public interface BlogMapper {
      */
     @Select("SELECT count(*) FROM blog WHERE id = #{id}")
     Long countBlogById(String id);
+
+    @Insert("Insert into blog (id,name) values (#{id},#{name,jdbcType=VARCHAR})")
+    int insert(Blog blog);
+
 }
