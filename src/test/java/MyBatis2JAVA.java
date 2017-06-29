@@ -1,6 +1,6 @@
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.pool.DruidDataSourceFactory;
-import org.apache.ibatis.executor.loader.cglib.CglibProxyFactory;
+//import org.apache.ibatis.executor.loader.cglib.CglibProxyFactory;
 import org.apache.ibatis.mapping.Environment;
 import org.apache.ibatis.session.Configuration;
 import org.apache.ibatis.session.SqlSession;
